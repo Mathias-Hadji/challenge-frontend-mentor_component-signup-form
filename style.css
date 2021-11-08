@@ -3,3 +3,132 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: hsl(0, 100%, 74%);
+    font-size: 16px;
+}
+
+.img-bg {
+    display: flex;
+    background-image: url('/images/bg-intro-desktop.png');
+    background-position: center;
+    height: 100vh;
+}
+
+.txt-container {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    margin-left: 200px;
+}
+
+.txt-container h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: 700;
+    width: 400px;
+    line-height: 50px;
+}
+
+.txt-container p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.form-container {
+    width: 50%;
+    margin: auto;
+    margin-right: 200px;
+}
+
+.form-container h3 {
+    color: #fff;
+    background: hsl(248, 32%, 49%);
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    -webkit-box-shadow: 0px 6px 0px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 6px 0px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 6px 0px 0px rgba(0,0,0,0.22);
+    margin-bottom: 25px;
+}
+
+.price-bloc {
+    font-weight: 400;
+}
+
+.form-container form {
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 0px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 6px 0px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 6px 0px 0px rgba(0,0,0,0.22);
+}
+
+.form-container form input {
+    display: block;
+    width: 100%;
+    border: 1px solid #333;
+    outline: none;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.form-container button {
+    display: block;
+    width: 100%;
+    background: hsl(154, 59%, 51%);
+    border: none;
+    outline: none;
+    padding: 0 50px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 20px 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.form-container button:hover {
+    background: hsl(154, 57%, 35%);
+}
+
+.form-container p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.therms-and-services {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.therms-and-services::after {
+    content: '';
+    width: 100%;
+    transform: scale(0);
+    position: absolute;
+    height: 1px;
+    background: hsl(0, 100%, 74%);
+    left: 2px;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+    transform-origin: left;
+}
+
+.therms-and-services:hover::after {
+    transform:scale(1)
+}
